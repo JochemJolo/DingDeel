@@ -114,17 +114,15 @@
                 class="lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[280px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
             >
                 <li class="max-lg:border-b max-lg:pb-4 px-3 lg:hidden">
-                    <a href="javascript:void(0)"
-                        ><img
+                        <img
                             src="https://readymadeui.com/readymadeui.svg"
                             alt="logo"
                             class="w-36"
                         />
-                    </a>
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="page"
+                        href="/"
                         class="hover:text-[#007bff] text-[#007bff] font-semibold block text-[15px]"
                         >Home</a
                     >
@@ -259,7 +257,7 @@
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="page"
+                        href="/voertuigen"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Voertuigen</a
                     >
