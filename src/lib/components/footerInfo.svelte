@@ -1,27 +1,15 @@
 <script>
-	import logo from '$lib/assets/GreyPlanks.png';
+	import logo from '$lib/assets/Logo.png';
 </script>
 
 
-<!-- <style>
-    .full-width {
-      width: 100vw; 
-      height: 15cm;
-      display: block; 
-      background-image: 'logo';
-    }
-  </style>
-
-  
-  <div class="full-width" style="background-image: url({logo});">
-
-<img alt="The project logo" src={logo} class="full-width"/> -->
-  
   <div class="full-width" >
     <div class="p-12 text-center rounded-lg">
         Test
     </div>
   </div>
+
+  <img alt="The project logo" src={logo}/>
   
   <style>
     .full-width {
@@ -36,4 +24,19 @@
         background-position: bottom;
     }
 </style>
+  
+
+<!-- <style>
+    .full-width {
+      width: 100vw; 
+      height: 15cm;
+      display: block; 
+      background-image: 'logo';
+    }
+  </style>
+
+  
+  <div class="full-width" style="background-image: url({logo});">
+
+<img alt="The project logo" src={logo} class="full-width"/> -->
   
