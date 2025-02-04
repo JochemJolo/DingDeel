@@ -1,10 +1,13 @@
 <script>
-import Navbar from "$lib/components/Navbar.svelte";
+    import Navbar from "$lib/components/Navbar.svelte";
+    import FInfo from "$lib/components/footerInfo.svelte";
 </script>
+<Navbar/>
+
 
 <h1>Welcome to SvelteKit</h1>
 <p class="text-red-500">
-    Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
+    Visit <a href="about.svelte">svelte.dev/docs/kit</a> to read the
     documentation
 </p>
-<Navbar/>
+<FInfo/>
