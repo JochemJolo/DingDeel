@@ -2,7 +2,6 @@
     import logo from "$lib/assets/Logo.png";
 </script>
 
-
 <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto text-center">
         <p>&copy;Ding Deel. All rights reserved.</p>
@@ -13,23 +12,9 @@
             <a href="/" class="text-white hover:text-gray-400 mx-2">Contact</a>
         </div>
     </div>
-  </div>
 
-  <img alt="The project logo" src={logo}/>
-  
-  <style>
-    .full-width {
-        background-color: rgb(190, 190, 190);
-        width: 100vw;
-        height: 5cm;
-        bottom: 0;
-        left: 0;
-        opacity: 0.7;
-        background-size: 100% 100%;
-        background-position: bottom;
-    }
-</style>
-  
+    <img alt="The project logo" src={logo} />
+</footer>
 
 <!-- <style>
     .full-width {
