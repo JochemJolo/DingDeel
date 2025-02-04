@@ -1,5 +1,5 @@
 <script>
-	import logo from '$lib/assets/logo.png';
+	import logo from '$lib/assets/Logo.png';
 </script>
 
 <header class='shadow-md bg-white font-[sans-serif] tracking-wide relative z-50'>
@@ -19,7 +19,7 @@
           <input type='text' placeholder='Search...' class="outline-none bg-transparent w-full text-sm" />
         </div>
 
-        <a href="javascript:void(0)" class="max-sm:hidden"><img src="{logo}" alt="logo" class='w-24' />
+        <a href="javascript:void(0)" class="max-sm:hidden"><img src="{logo}" alt="logo" class='w-12' />
         </a>
         <a href="javascript:void(0)" class="hidden max-sm:block"><img src="{logo}" alt="logo" class='w-9' />
         </a>
@@ -42,6 +42,7 @@
             </svg>
           </span>
           <div class="inline-block cursor-pointer border-gray-300">
+            <a href="login">
             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"
               class="hover:fill-[#007bff]">
               <circle cx="10" cy="7" r="6" data-original="#000000" />
@@ -49,6 +50,7 @@
                 d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z"
                 data-original="#000000" />
             </svg>
+        </a>
           </div>
         </div>
       </section>

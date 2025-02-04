@@ -3,13 +3,11 @@
 </script>
 
 
-  <div class="full-width" >
+  <footer class="full-width bottom-0 absolute">
     <div class="p-12 text-center rounded-lg">
         Test
     </div>
-  </div>
-
-  <img alt="The project logo" src={logo}/>
+  </footer>
   
   <style>
     .full-width {
@@ -22,6 +20,7 @@
         background-size: 100% 100%;
         background-position: bottom;
     }
+
 </style>
   
 
