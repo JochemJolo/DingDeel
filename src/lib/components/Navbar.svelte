@@ -28,7 +28,7 @@
             </svg>
             <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Zoeken..."
                 class="outline-none bg-transparent w-full text-sm"
             />
         </div>

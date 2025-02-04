@@ -6,7 +6,7 @@
 
 <main class="p-4 flex">
     <!-- Empty Box -->
-    <aside class="w-1/4 bg-gray-100 p-4 rounded-2xl mr-4">
+    <aside class=" w-1/4 p-4 rounded-2xl mr-4">
         <Zoekfilter />
     </aside>
 
