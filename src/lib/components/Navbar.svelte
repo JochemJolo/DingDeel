@@ -1,0 +1,1 @@
+<div class="p-12 bg-green-200 text-center rounded-lg">hallo</div>
