@@ -2,14 +2,14 @@
 import { writable } from 'svelte/store';
 
 export const productData = writable([
-  { name: 'BMW 114', image: '/products/bmw114.png', type: 'Kopen', productType: 'auto' },
-  { name: 'Daewoo', image: '/products/daewoo.png', type: 'Ruilen', productType: 'auto' },
-  { name: 'Fiesta', image: '/products/fiesta.png', type: 'Lenen', productType: 'auto' },
-  { name: 'Lupo', image: '/products/lupo.png', type: 'Kopen', productType: 'auto' },
-  { name: 'MG', image: '/products/mg.png', type: 'Ruilen', productType: 'auto' },
-  { name: 'Porsche Boxster', image: '/products/porscheboxster.png', type: 'Lenen', productType: 'auto' },
-  { name: 'Seat Ibiza', image: '/products/seatibiza.png', type: 'Kopen', productType: 'auto' },
-  { name: 'Suzuki Alto', image: '/products/suzukialto.png', type: 'Ruilen', productType: 'auto' },
-  { name: 'Touareg', image: '/products/touareq.png', type: 'Lenen', productType: 'auto' },
+  { name: 'BMW 114', image: '/products/autos/bmw114.png', type: 'Kopen', productType: 'auto' },
+  { name: 'Daewoo', image: '/products/autos/daewoo.png', type: 'Ruilen', productType: 'auto' },
+  { name: 'Fiesta', image: '/products/autos/fiesta.png', type: 'Lenen', productType: 'auto' },
+  { name: 'Lupo', image: '/products/autos/lupo.png', type: 'Kopen', productType: 'auto' },
+  { name: 'MG', image: '/products/autos/mg.png', type: 'Ruilen', productType: 'auto' },
+  { name: 'Porsche Boxster', image: '/products/autos/porscheboxster.png', type: 'Lenen', productType: 'auto' },
+  { name: 'Seat Ibiza', image: '/products/autos/seatibiza.png', type: 'Kopen', productType: 'auto' },
+  { name: 'Suzuki Alto', image: '/products/autos/suzukialto.png', type: 'Ruilen', productType: 'auto' },
+  { name: 'Touareg', image: '/products/autos/touareq.png', type: 'Lenen', productType: 'auto' },
 ]);
 

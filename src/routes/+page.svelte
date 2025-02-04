@@ -4,6 +4,6 @@
     import FInfo from "$lib/components/footerInfo.svelte";
 </script>
 
-
+<Navbar />
 <Products />
 <FInfo />
