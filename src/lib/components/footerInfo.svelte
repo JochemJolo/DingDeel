@@ -2,13 +2,6 @@
     import logo from "$lib/assets/Logo.png";
 </script>
 
-<div class="full-width">
-    <div class="p-12 text-center rounded-lg">Test</div>
-</div>
-
-<div class="h-screen">
-    <h1 class="text-4xl text-center py-10">Deel Doe</h1>
-</div>
 
 <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto text-center">
