@@ -16,7 +16,6 @@
         background-color: rgb(190, 190, 190);
         width: 100vw;
         height: 5cm;
-        position: fixed;
         bottom: 0;
         left: 0;
         opacity: 0.7;
