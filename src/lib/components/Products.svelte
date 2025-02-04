@@ -2,8 +2,6 @@
     import { productData } from "$lib/store/datastore.store";
     import Zoekfilter from "./Zoekfilter.svelte";
     let products = $productData;
-
-    console.log(products);
 </script>
 
 <main class="p-4 flex">
