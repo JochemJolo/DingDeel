@@ -1,0 +1,20 @@
+// src/lib/stores/filterStore.js
+import { writable } from 'svelte/store';
+
+const initialState = {
+    categories: {
+        Auto: false,
+        Kleding: false,
+        Gereedschap: false,
+        Mensen: false,
+    },
+    types: {
+        Ruilen: false,
+        Kopen: false,
+        Lenen: false,
+        Huren: false,
+    }
+};
+
+export const filterStore = writable(initialState);
+

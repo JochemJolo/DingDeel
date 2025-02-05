@@ -1,24 +1,18 @@
 import { readable } from 'svelte/store';
+import { onMount } from 'svelte';
 
 export const productData = readable([], function start(set) {
-    let loaded = false;
-
-    async function loadProducts() {
-        if (loaded) return;
-        try {
-            const response = await fetch('/src/lib/store/products.json');
-            const data = await response.json();
-            set(data);
-            console.log (data)
-            loaded = true;
-        } catch (error) {
-            console.error('Error loading product data:', error);
-            set([]);
-        }
+  onMount(async () => {
+    try {
+      const response = await fetch('/src/lib/store/products.json');
+      const data = await response.json();
+      set(data);
+    } catch (error) {
+      console.error('Error loading product data:', error);
+      set([]);
     }
+  });
 
-    loadProducts();
-
-    return function stop() {};
+  return function stop() {};
 });
 

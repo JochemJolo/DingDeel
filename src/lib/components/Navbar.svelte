@@ -1,22 +1,19 @@
 <script>
     import logo from "$lib/assets/Logo.png";
-    import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher } from "svelte";
 
     import { onMount } from "svelte";
 
     let isOpen = false;
 
     const dispatch = createEventDispatcher();
-  
+
     function openLoginModal() {
-      dispatch('openLoginModal');
+        dispatch("openLoginModal");
     }
-  </script>
+</script>
 
-
-<header
-    class="shadow-md bg-white font-[sans-serif] tracking-wide relative"
->
+<header class="shadow-md bg-white font-[sans-serif] tracking-wide relative">
     <section class="py-2 bg-[#007bff] text-white text-right px-10">
         <p class="text-sm text-center">
             <strong class="mx-3">Vandaag en morgen alles 2x zo duur!</strong>
@@ -44,8 +41,26 @@
                 class="outline-none bg-transparent w-full text-sm"
             />
         </div>
-        <a href="/" class="max-sm:hidden"
-            ><img src={logo} alt="logo" class="w-24" />
+        <a href="/" class="max-sm:hidden flex items-center group">
+            <div
+                class="flex items-center space-x-2 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full px-4 py-2 shadow-md transition-all duration-300 group-hover:shadow-lg group-hover:scale-105"
+            >
+                <h2
+                    class="text-xl font-bold text-gray-800 transition-colors group-hover:text-blue-600"
+                >
+                    Ding
+                </h2>
+                <img
+                    src={logo}
+                    alt="logo"
+                    class="w-16 h-16 object-contain transition-transform group-hover:rotate-6"
+                />
+                <h2
+                    class="text-xl font-bold text-gray-800 transition-colors group-hover:text-blue-600"
+                >
+                    Deel
+                </h2>
+            </div>
         </a>
         <a href="/" class="hidden max-sm:block"
             ><img src={logo} alt="logo" class="w-9" />
@@ -67,9 +82,7 @@
                 </svg>
             </span>
 
-                
-            
-            <span class="relative" >
+            <span class="relative">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -85,7 +98,9 @@
             </span>
 
             <!-- svelte-ignore a11y_consider_explicit_label -->
-            <button class="inline-block cursor-pointer border-gray-300" on:click={openLoginModal}
+            <button
+                class="inline-block cursor-pointer border-gray-300"
+                on:click={openLoginModal}
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -129,14 +144,14 @@
                 </svg>
             </button>
             <ul
-                class="lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[280px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+                class="lg:flex p-4 lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[280px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
             >
                 <li class="max-lg:border-b max-lg:pb-4 px-3 lg:hidden">
-                        <img
-                            src="https://readymadeui.com/readymadeui.svg"
-                            alt="logo"
-                            class="w-36"
-                        />
+                    <img
+                        src="https://readymadeui.com/readymadeui.svg"
+                        alt="logo"
+                        class="w-36"
+                    />
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
@@ -315,3 +330,4 @@
         </div>
     </div>
 </header>
+
