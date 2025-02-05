@@ -24,73 +24,80 @@
         <div class="flex flex-wrap justify-center gap-8">
             {#each products as product}
                 <div
-                    class="flex-shrink-0 w-64 pb-4 bg-white rounded-xl shadow-md overflow-hidden transition-transform relative"
+                    class="flex flex-col justify-between w-64 bg-white rounded-xl shadow-md overflow-hidden transition-transform relative"
                 >
-                    <img
-                        src={product.image}
-                        alt={product.name}
-                        class="w-full h-64 hover:scale-110 transition-transform object-cover"
-                    />
-                    <div
-                        class="absolute top-6 -right-8 transform rotate-45
-                {product.type === 'Kopen'
-                            ? 'bg-red-500'
-                            : product.type === 'Ruilen'
-                              ? 'bg-blue-500'
-                              : product.type === 'Lenen'
-                                ? 'bg-green-500'
-                                : 'bg-gray-500'}
-                 text-white py-1 px-10 text-sm font-semibold shadow-md"
-                    >
-                        {product.type}
+                    <div>
+                        <div class="relative">
+                            <img
+                                src={product.image}
+                                alt={product.name}
+                                class="w-full h-64 hover:scale-110 transition-transform object-cover"
+                            />
+                            <div class="absolute top-4 right-4 z-10">
+                                <span
+                                    class="inline-flex items-center px-3 py-1 rounded-full text-sm font-bold
+                            {product.type === 'Kopen'
+                                        ? 'bg-red-100 text-red-900'
+                                        : product.type === 'Ruilen'
+                                          ? 'bg-blue-100 text-blue-900'
+                                          : product.type === 'Lenen'
+                                            ? 'bg-green-100 text-green-900'
+                                            : 'bg-gray-100 text-gray-800'}"
+                                >
+                                    {product.type}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h2 class="text-xl font-semibold mb-2 truncate">
+                                {product.name}
+                            </h2>
+                            <p class="text-sm mb-2 line-clamp-3">
+                                {product.description}
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                Category: {product.productType}
+                            </p>
+                        </div>
                     </div>
-                    <div class="p-4">
-                        <h2 class="text-xl font-semibold mb-2 truncate">
-                            {product.name}
-                        </h2>
-                        {product.description}
-                        <p class="text-sm text-gray-600">
-                            Category: {product.productType}
-                        </p>
-                    </div>
-                    <div
-                        class="flex flex-col space-y-2 items-center justify-center"
-                    >
-                        {#if product.type === "Kopen"}
-                            <button
-                                class="text-white font-semibold w-1/2 py-2 rounded-md bg-green-500 hover:bg-green-600"
-                            >
-                                Stuur Bericht
-                            </button>
-                            <button
-                                class="text-white font-semibold w-1/2 py-2 rounded-md bg-red-500 hover:bg-red-600"
-                            >
-                                Bieden
-                            </button>
-                        {:else if product.type === "Ruilen"}
-                            <button
-                                class="text-white font-semibold w-1/2 py-2 rounded-md bg-green-500 hover:bg-green-600"
-                            >
-                                Stuur Bericht
-                            </button>
-                            <button
-                                class="text-white font-semibold w-1/2 py-2 rounded-md bg-blue-500 hover:bg-blue-600"
-                            >
-                                Ruil Voorstel
-                            </button>
-                        {:else if product.type === "Lenen"}
-                            <button
-                                class="text-white font-semibold w-1/2 py-2 rounded-md bg-green-500 hover:bg-green-600"
-                            >
-                                Stuur Bericht
-                            </button>
-                        {:else}
-                            <button
-                                class="text-white font-semibold w-1/2 py-2 rounded-md bg-gray-500 hover:bg-gray-600"
-                            >
-                                Stuur Bericht
-                            </button>
-                        {/if}
+                    <div class="p-4 mt-auto">
+                        <div class="flex flex-col space-y-2">
+                            {#if product.type === "Kopen"}
+                                <button
+                                    class="text-white font-semibold w-full py-2 rounded-md bg-red-500 hover:bg-red-600"
+                                >
+                                    Bieden
+                                </button>
+                                <button
+                                    class="text-white font-semibold w-full py-2 rounded-md bg-green-500 hover:bg-green-600"
+                                >
+                                    Stuur Bericht
+                                </button>
+                            {:else if product.type === "Ruilen"}
+                                <button
+                                    class="text-white font-semibold w-full py-2 rounded-md bg-blue-500 hover:bg-blue-600"
+                                >
+                                    Ruil Voorstel
+                                </button>
+                                <button
+                                    class="text-white font-semibold w-full py-2 rounded-md bg-green-500 hover:bg-green-600"
+                                >
+                                    Stuur Bericht
+                                </button>
+                            {:else if product.type === "Lenen"}
+                                <button
+                                    class="text-white font-semibold w-full py-2 rounded-md bg-green-500 hover:bg-green-600"
+                                >
+                                    Stuur Bericht
+                                </button>
+                            {:else}
+                                <button
+                                    class="text-white font-semibold w-full py-2 rounded-md bg-gray-500 hover:bg-gray-600"
+                                >
+                                    Stuur Bericht
+                                </button>
+                            {/if}
+                        </div>
                     </div>
                 </div>
             {/each}
