@@ -44,10 +44,10 @@
                 class="outline-none bg-transparent w-full text-sm"
             />
         </div>
-        <a href="javascript:void(0)" class="max-sm:hidden"
+        <a href="/" class="max-sm:hidden"
             ><img src={logo} alt="logo" class="w-24" />
         </a>
-        <a href="javascript:void(0)" class="hidden max-sm:block"
+        <a href="/" class="hidden max-sm:block"
             ><img src={logo} alt="logo" class="w-9" />
         </a>
         <div
@@ -149,7 +149,7 @@
                     class="group max-lg:border-b max-lg:px-3 max-lg:py-3 relative"
                 >
                     <a
-                        href="page"
+                        href="/"
                         class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center"
                         >Kleding<svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@
                     >
                         <li class="border-b py-3">
                             <a
-                                href="page"
+                                href="/"
                                 class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center"
                             >
                                 <svg
@@ -190,7 +190,7 @@
                         </li>
                         <li class="border-b py-3">
                             <a
-                                href="page"
+                                href="/"
                                 class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center"
                             >
                                 <svg
@@ -226,7 +226,7 @@
                         </li>
                         <li class="border-b py-3">
                             <a
-                                href="page"
+                                href="/"
                                 class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-800 text-[15px] flex items-center"
                             >
                                 <svg
@@ -268,7 +268,7 @@
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="page"
+                        href="/"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Gereedschap</a
                     >
@@ -282,14 +282,14 @@
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="page"
+                        href="/"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Mensen</a
                     >
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="page"
+                        href="/"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Contact</a
                     >

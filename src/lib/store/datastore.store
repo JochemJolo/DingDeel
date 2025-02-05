@@ -1,15 +1,24 @@
-// src/stores/productsStore.js
-import { writable } from 'svelte/store';
+import { readable } from 'svelte/store';
 
-export const productData = writable([
-  { name: 'BMW 114', image: '/products/autos/bmw114.png', type: 'Kopen', productType: 'auto' },
-  { name: 'Daewoo', image: '/products/autos/daewoo.png', type: 'Ruilen', productType: 'auto' },
-  { name: 'Fiesta', image: '/products/autos/fiesta.png', type: 'Lenen', productType: 'auto' },
-  { name: 'Lupo', image: '/products/autos/lupo.png', type: 'Kopen', productType: 'auto' },
-  { name: 'MG', image: '/products/autos/mg.png', type: 'Ruilen', productType: 'auto' },
-  { name: 'Porsche Boxster', image: '/products/autos/porscheboxster.png', type: 'Lenen', productType: 'auto' },
-  { name: 'Seat Ibiza', image: '/products/autos/seatibiza.png', type: 'Kopen', productType: 'auto' },
-  { name: 'Suzuki Alto', image: '/products/autos/suzukialto.png', type: 'Ruilen', productType: 'auto' },
-  { name: 'Touareg', image: '/products/autos/touareq.png', type: 'Lenen', productType: 'auto' },
-]);
+export const productData = readable([], function start(set) {
+    let loaded = false;
+
+    async function loadProducts() {
+        if (loaded) return;
+        try {
+            const response = await fetch('/src/lib/store/products.json');
+            const data = await response.json();
+            set(data);
+            console.log (data)
+            loaded = true;
+        } catch (error) {
+            console.error('Error loading product data:', error);
+            set([]);
+        }
+    }
+
+    loadProducts();
+
+    return function stop() {};
+});
 

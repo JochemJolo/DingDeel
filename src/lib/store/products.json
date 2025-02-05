@@ -1,0 +1,378 @@
+[
+  {
+    "id": 1,
+    "name": "BMW 114",
+    "image": "/products/autos/bmw114.png",
+    "type": "Lenen",
+    "productType": "auto",
+    "description": "Deze BMW 114 is te leen gedurende weekenden."
+  },
+  {
+    "id": 2,
+    "name": "Daewoo",
+    "image": "/products/autos/daewoo.png",
+    "type": "Ruilen",
+    "productType": "auto",
+    "description": "Zou deze Daewoo wel willen ruilen, tijdelijk of voor altijd. Heb jij iets leuks?"
+  },
+  {
+    "id": 3,
+    "name": "Fiesta",
+    "image": "/products/autos/fiesta.png",
+    "type": "Lenen",
+    "productType": "auto",
+    "description": "Fiesta is te lenen als je een ritje moet maken. Stuur maar een berichtje."
+  },
+  {
+    "id": 4,
+    "name": "Lupo",
+    "image": "/products/autos/lupo.png",
+    "type": "Lenen",
+    "productType": "auto",
+    "description": "Lupo kun je lenen wanneer ik weg ben voor korte afstanden. Ik rijd liever mijn ferrari."
+  },
+  {
+    "id": 5,
+    "name": "MG",
+    "image": "/products/autos/mg.png",
+    "type": "Ruilen",
+    "productType": "auto",
+    "description": "Deze MG ruil ik graag. Tijdelijk of helemaal, maakt niet uit — kom maar met iets leuks."
+  },
+  {
+    "id": 6,
+    "name": "Porsche Boxster",
+    "image": "/products/autos/porscheboxster.png",
+    "type": "Lenen",
+    "productType": "auto",
+    "description": "Ja, deze Porsche Boxster mag je lenen. Maar rij wel een beetje netjes, hè."
+  },
+  {
+    "id": 7,
+    "name": "Seat Ibiza",
+    "image": "/products/autos/seatibiza.png",
+    "type": "Huren",
+    "productType": "auto",
+    "description": "De Seat Ibiza is beschikbaar om te huren. Handig voor een korte vakantie of werktrip."
+  },
+  {
+    "id": 8,
+    "name": "Suzuki Alto",
+    "image": "/products/autos/suzukialto.png",
+    "type": "Ruilen",
+    "productType": "auto",
+    "description": "Suzuki Alto ruilen? Kom maar op met je voorstel, ik sta open voor ideeën."
+  },
+  {
+    "id": 9,
+    "name": "Touareg",
+    "image": "/products/autos/touareq.png",
+    "type": "Lenen",
+    "productType": "auto",
+    "description": "Touareg lenen? Prima hoor, als je iets groots moet doen."
+  },
+  {
+    "id": 10,
+    "name": "Boormachine",
+    "image": "/products/gereedschap/boormachine.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze krachtige boormachine voor klussen in hout, metaal en beton."
+  },
+  {
+    "id": 11,
+    "name": "Dakplaat",
+    "image": "/products/gereedschap/dakplaat.png",
+    "type": "Ruilen",
+    "productType": "gereedschap",
+    "description": "Ruil stevige dakplaat voor een tijdelijke dakconstructie of renovatieproject."
+  },
+  {
+    "id": 12,
+    "name": "Hamer",
+    "image": "/products/gereedschap/hammer.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze hamer voor je timmerklussen en algemene klussen."
+  },
+  {
+    "id": 13,
+    "name": "Hamersticker",
+    "image": "/products/gereedschap/hammersticker.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze stijlvolle sticker om je gereedschap te personaliseren."
+  },
+  {
+    "id": 14,
+    "name": "Kitspuit",
+    "image": "/products/gereedschap/kitspuit.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze kitspuit voor het aanbrengen van siliconen of lijm op jouw project."
+  },
+  {
+    "id": 15,
+    "name": "Kruiskoppen",
+    "image": "/products/gereedschap/kruiskoppen.png",
+    "type": "Ruilen",
+    "productType": "gereedschap",
+    "description": "Ruil hoogwaardige kruiskopschroeven voor jouw montageklussen."
+  },
+  {
+    "id": 16,
+    "name": "Mini-boormachine",
+    "image": "/products/gereedschap/mini-boormachine.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze compacte mini-boormachine voor precisiewerk en fijne klussen."
+  },
+  {
+    "id": 17,
+    "name": "Moersleutels",
+    "image": "/products/gereedschap/moersluitels.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze moersleutels voor het aandraaien van bouten en moeren."
+  },
+  {
+    "id": 18,
+    "name": "Platkoppen",
+    "image": "/products/gereedschap/platkoppen.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze platkopschroeven voor bevestiging in hout en metaal."
+  },
+  {
+    "id": 19,
+    "name": "Schroeven",
+    "image": "/products/gereedschap/schroeven.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze diverse schroeven voor klussen in hout, metaal en beton."
+  },
+  {
+    "id": 20,
+    "name": "Schroevendraaierset",
+    "image": "/products/gereedschap/schroevendraaierset.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze complete schroevendraaierset voor al jouw schroefklussen."
+  },
+  {
+    "id": 21,
+    "name": "Spijkers",
+    "image": "/products/gereedschap/spijker.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen sterke spijkers voor houtwerk en tijdelijke constructies."
+  },
+  {
+    "id": 22,
+    "name": "Tang",
+    "image": "/products/gereedschap/tang.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze degelijke tang voor knip- en grijptaken."
+  },
+  {
+    "id": 23,
+    "name": "Tangenset",
+    "image": "/products/gereedschap/tangsest.png",
+    "type": "Ruilen",
+    "productType": "gereedschap",
+    "description": "Ruil deze complete tangenset voor jouw knip- en montageklussen."
+  },
+  {
+    "id": 24,
+    "name": "Vuist Hamer",
+    "image": "/products/gereedschap/vuisthammer.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze krachtige vuist hamer voor sloop- en breekwerk."
+  },
+  {
+    "id": 25,
+    "name": "Waterpomptang",
+    "image": "/products/gereedschap/watertang.png",
+    "type": "Lenen",
+    "productType": "gereedschap",
+    "description": "Lenen deze verstelbare waterpomptang voor leidingen en moeren."
+  },
+  {
+    "id": 26,
+    "name": "Baseball Cap",
+    "image": "/products/kleding/baseball.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Stijlvolle baseball cap voor casual draagcomfort."
+  },
+  {
+    "id": 27,
+    "name": "Cowboy Hat",
+    "image": "/products/kleding/cowboy.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Stoere cowboyhoed, ideaal voor outdoor avonturen."
+  },
+  {
+    "id": 28,
+    "name": "Fancy Hat",
+    "image": "/products/kleding/fancy.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Elegant hoedje voor speciale gelegenheden."
+  },
+  {
+    "id": 29,
+    "name": "Leren Handschoenen",
+    "image": "/products/kleding/leatherglove.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Hoogwaardige leren handschoenen voor stijl en bescherming."
+  },
+  {
+    "id": 30,
+    "name": "Leren Broek",
+    "image": "/products/kleding/leerbroek.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Stevige leren broek, geschikt voor motorritten en avontuurlijke activiteiten."
+  },
+  {
+    "id": 31,
+    "name": "Newsboy Cap",
+    "image": "/products/kleding/news.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Klassieke newsboy cap voor een vintage uitstraling."
+  },
+  {
+    "id": 32,
+    "name": "Zijden Shirt",
+    "image": "/products/kleding/silkshirt.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Comfortabel en elegant zijden shirt voor een luxe gevoel."
+  },
+  {
+    "id": 33,
+    "name": "Spijkerbroek",
+    "image": "/products/kleding/spijkerbroek.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Duurzame spijkerbroek voor dagelijks gebruik."
+  },
+  {
+    "id": 34,
+    "name": "Sport Outfit",
+    "image": "/products/kleding/sport.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Comfortabele sportkleding geschikt voor verschillende trainingsactiviteiten."
+  },
+  {
+    "id": 35,
+    "name": "T-shirt",
+    "image": "/products/kleding/tshirt.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Basic T-shirt voor casual dagelijkse outfits."
+  },
+  {
+    "id": 36,
+    "name": "Wollen Handschoenen",
+    "image": "/products/kleding/wolglove.png",
+    "type": "Kopen",
+    "productType": "kleding",
+    "description": "Warme wollen handschoenen, perfect voor koude dagen."
+  },
+  {
+    "id": 37,
+    "name": "Chef",
+    "image": "/products/mensen/chef.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Deze chef kookt de heerlijkste maaltijden voor jou. Geen zorgen meer over wat je vanavond gaat eten!"
+  },
+  {
+    "id": 38,
+    "name": "Financial Advisor",
+    "image": "/products/mensen/financial-advisor.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Behoefte aan financieel advies? Deze adviseur helpt je met slimme investeringen en budgettering."
+  },
+  {
+    "id": 39,
+    "name": "Grensbewaker",
+    "image": "/products/mensen/grensbewaker.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Altijd iemand nodig om de grens te bewaken? Deze grensbewaker staat paraat om de orde te handhaven."
+  },
+  {
+    "id": 40,
+    "name": "Intelligente Man",
+    "image": "/products/mensen/intelligente man.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Deze slimme man weet overal raad mee. Heb je een lastig probleem? Hij vindt altijd een oplossing."
+  },
+  {
+    "id": 41,
+    "name": "John Wick",
+    "image": "/products/mensen/johnwick.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Op zoek naar bescherming? John Wick zorgt ervoor dat niemand met je durft te sollen."
+  },
+  {
+    "id": 42,
+    "name": "Kapper",
+    "image": "/products/mensen/kapper.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Tijd voor een knipbeurt? Deze kapper zorgt ervoor dat je er altijd piekfijn uitziet."
+  },
+  {
+    "id": 43,
+    "name": "Personal Assistant",
+    "image": "/products/mensen/personalassistant.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Te druk met je agenda? Deze personal assistant houdt alles voor je bij en regelt de details."
+  },
+  {
+    "id": 44,
+    "name": "Personal Trainer",
+    "image": "/products/mensen/personaltrainer.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Wil je fit worden? Deze personal trainer motiveert je om je fitnessdoelen te bereiken."
+  },
+  {
+    "id": 45,
+    "name": "Reisgids",
+    "image": "/products/mensen/reisgids.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Behoefte aan een unieke reiservaring? Deze reisgids laat je de verborgen parels van je bestemming zien."
+  },
+  {
+    "id": 46,
+    "name": "Therapeut",
+    "image": "/products/mensen/therapeut.png",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Een luisterend oor nodig? Deze therapeut helpt je met inzicht en mentale ondersteuning."
+  },
+  {
+    "id": 47,
+    "name": "Tuinier",
+    "image": "/products/mensen/tuinier.webp",
+    "type": "Huren",
+    "productType": "mensen",
+    "description": "Wil je een prachtige tuin zonder zelf te wroeten? Deze tuinier transformeert je buitenruimte tot een paradijs."
+  }
+]
