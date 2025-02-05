@@ -1,9 +1,21 @@
 <script>
     import logo from "$lib/assets/Logo.png";
-</script>
+    import { createEventDispatcher } from 'svelte';
+
+    import { onMount } from "svelte";
+
+    let isOpen = false;
+
+    const dispatch = createEventDispatcher();
+  
+    function openLoginModal() {
+      dispatch('openLoginModal');
+    }
+  </script>
+
 
 <header
-    class="shadow-md bg-white font-[sans-serif] tracking-wide relative z-50"
+    class="shadow-md bg-white font-[sans-serif] tracking-wide relative"
 >
     <section class="py-2 bg-[#007bff] text-white text-right px-10">
         <p class="text-sm text-center">
@@ -54,7 +66,10 @@
                     />
                 </svg>
             </span>
-            <span class="relative">
+
+                
+            
+            <span class="relative" >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -68,7 +83,10 @@
                     ></path>
                 </svg>
             </span>
-            <div class="inline-block cursor-pointer border-gray-300">
+
+            <!-- svelte-ignore a11y_consider_explicit_label -->
+            <button class="inline-block cursor-pointer border-gray-300" on:click={openLoginModal}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -82,7 +100,7 @@
                         data-original="#000000"
                     />
                 </svg>
-            </div>
+            </button>
         </div>
     </section>
     <div class="flex flex-wrap justify-center px-10 py-3 relative">
