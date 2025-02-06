@@ -145,7 +145,7 @@
                             <img
                                 src={product.image}
                                 alt={product.name}
-                                class="w-full cover h-52 hover:scale-110 transition-transform object-top object-cover hover:object-scale-down"
+                                class="w-full cover h-52 transition-transform object-top object-cover hover:object-scale-down"
                             />
                             <div class="absolute top-4 right-4 z-10">
                                 <span
@@ -178,35 +178,35 @@
                         <div class="flex flex-col space-y-2">
                             {#if product.type === "Kopen"}
                                 <button
-                                    class="text-white font-semibold w-full py-2 rounded-md bg-red-500 hover:bg-red-600"
+                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-red-500 hover:bg-red-600"
                                 >
                                     Bieden
                                 </button>
                                 <button
-                                    class="text-white font-semibold w-full py-2 rounded-md bg-green-500 hover:bg-green-600"
+                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-green-500 hover:bg-green-600"
                                 >
                                     Stuur Bericht
                                 </button>
                             {:else if product.type === "Ruilen"}
                                 <button
-                                    class="text-white font-semibold w-full py-2 rounded-md bg-blue-500 hover:bg-blue-600"
+                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-blue-500 hover:bg-blue-600"
                                 >
                                     Ruil Voorstel
                                 </button>
                                 <button
-                                    class="text-white font-semibold w-full py-2 rounded-md bg-green-500 hover:bg-green-600"
+                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-green-500 hover:bg-green-600"
                                 >
                                     Stuur Bericht
                                 </button>
                             {:else if product.type === "Lenen"}
                                 <button
-                                    class="text-white font-semibold w-full py-2 rounded-md bg-green-500 hover:bg-green-600"
+                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-green-500 hover:bg-green-600"
                                 >
                                     Stuur Bericht
                                 </button>
                             {:else}
                                 <button
-                                    class="text-white font-semibold w-full py-2 rounded-md bg-gray-500 hover:bg-gray-600"
+                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-gray-500 hover:bg-gray-600"
                                 >
                                     Stuur Bericht
                                 </button>

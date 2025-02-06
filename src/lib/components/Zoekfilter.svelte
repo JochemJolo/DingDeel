@@ -51,7 +51,6 @@
                         <input
                             type="checkbox"
                             bind:checked={types[type]}
-                            on:change={handleFilter}
                             class="form-checkbox text-blue-600 mr-2"
                         />
                         {type}
