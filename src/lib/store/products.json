@@ -203,7 +203,7 @@
     "id": 26,
     "name": "Baseball Cap",
     "image": "/products/kleding/baseball.png",
-    "type": "Kopen",
+    "type": "Ruilen",
     "productType": "kleding",
     "description": "Stijlvolle baseball cap voor casual draagcomfort."
   },
@@ -219,7 +219,7 @@
     "id": 28,
     "name": "Fancy Hat",
     "image": "/products/kleding/fancy.png",
-    "type": "Kopen",
+    "type": "Huren",
     "productType": "kleding",
     "description": "Elegant hoedje voor speciale gelegenheden."
   },
@@ -243,7 +243,7 @@
     "id": 31,
     "name": "Newsboy Cap",
     "image": "/products/kleding/news.png",
-    "type": "Kopen",
+    "type": "Lenen",
     "productType": "kleding",
     "description": "Klassieke newsboy cap voor een vintage uitstraling."
   },
@@ -267,7 +267,7 @@
     "id": 34,
     "name": "Sport Outfit",
     "image": "/products/kleding/sport.png",
-    "type": "Kopen",
+    "type": "Ruilen",
     "productType": "kleding",
     "description": "Comfortabele sportkleding geschikt voor verschillende trainingsactiviteiten."
   },
@@ -275,7 +275,7 @@
     "id": 35,
     "name": "T-shirt",
     "image": "/products/kleding/tshirt.png",
-    "type": "Kopen",
+    "type": "Ruilen",
     "productType": "kleding",
     "description": "Basic T-shirt voor casual dagelijkse outfits."
   },

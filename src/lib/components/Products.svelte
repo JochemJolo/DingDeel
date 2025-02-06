@@ -4,10 +4,20 @@
     import Zoekfilter from "./Zoekfilter.svelte";
     import { filterStore } from "$lib/store/Zoekfilter.store";
 
+    import Chatcomp from "./Chatcomp.svelte";
+
+    let isChatOpen = false;
+
+    function openChat() {
+        isChatOpen = true;
+    }
+
     let products = [];
     let filteredProducts = [];
     let currentPage = 1;
     let itemsPerPage = 6; // 2 columns * 3 rows
+
+    let searchTerm = "";
 
     // Wait for store to be populated
     $: if ($productData && $productData.length > 0) {
@@ -45,15 +55,30 @@
             );
             const noTypesSelected = Object.values(types).every((v) => !v);
 
+            const searchMatch =
+                searchTerm === "" ||
+                product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                product.description
+                    .toLowerCase()
+                    .includes(searchTerm.toLowerCase()) ||
+                product.productType
+                    .toLowerCase()
+                    .includes(searchTerm.toLowerCase()) ||
+                product.type.toLowerCase().includes(searchTerm.toLowerCase());
             return (
                 (noCategoriesSelected || categoryMatch) &&
-                (noTypesSelected || typeMatch)
+                (noTypesSelected || typeMatch) &&
+                searchMatch
             );
         });
 
         currentPage = 1; // Reset to first page after filtering
     }
 
+    // Add this reactive statement
+    $: {
+        applyFilters();
+    }
     function getPaginatedProducts(allProducts, page, perPage) {
         const start = (page - 1) * perPage;
         const end = start + perPage;
@@ -85,6 +110,29 @@
 
     <section class="w-full max-w-7xl mx-auto px-4">
         <h1 class="text-2xl font-bold mb-8 text-center">Beschikbare Items</h1>
+        <div class="relative mb-8 max-w-md mx-auto">
+            <input
+                type="text"
+                placeholder="Zoek producten..."
+                bind:value={searchTerm}
+                on:input={applyFilters}
+                class="w-full py-3 px-4 pr-10 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+            />
+            <svg
+                class="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+            </svg>
+        </div>
 
         <!-- Pagination controls -->
         <div class="my-8 flex justify-center items-center space-x-2">
@@ -166,11 +214,11 @@
                             <h2 class="text-xl font-semibold mb-2 truncate">
                                 {product.name}
                             </h2>
-                            <p class="text-sm mb-2 line-clamp-3">
+                            <p class="text-base mb-2 line-clamp-3">
                                 {product.description}
                             </p>
                             <p class="text-sm text-gray-600">
-                                Category: {product.productType}
+                                {product.productType}
                             </p>
                         </div>
                     </div>
@@ -199,6 +247,7 @@
                                 </button>
                                 <button
                                     class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
+                                    on:click={openChat}
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -232,6 +281,7 @@
                                 </button>
                                 <button
                                     class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
+                                    on:click={openChat}
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -250,6 +300,7 @@
                             {:else if product.type === "Lenen"}
                                 <button
                                     class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
+                                    on:click={openChat}
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -339,4 +390,8 @@
             </button>
         </div>
     </section>
+    <!-- Conditionally Show the Chat Component -->
+    {#if isChatOpen}
+        <Chatcomp on:close={() => (isChatOpen = false)} />
+    {/if}
 </main>
