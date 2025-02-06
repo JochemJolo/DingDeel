@@ -290,21 +290,21 @@
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="/voertuigen"
+                        href="#"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Voertuigen</a
                     >
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="/"
+                        href="#"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Mensen</a
                     >
                 </li>
                 <li class="max-lg:border-b max-lg:px-3 max-lg:py-3">
                     <a
-                        href="/"
+                        href="#"
                         class="hover:text-[#007bff] text-gray-800 text-[15px] block"
                         >Contact</a
                     >

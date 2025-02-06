@@ -178,36 +178,109 @@
                         <div class="flex flex-col space-y-2">
                             {#if product.type === "Kopen"}
                                 <button
-                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-red-500 hover:bg-red-600"
+                                    class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-purple-500 hover:bg-purple-600 shadow-md"
                                 >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M10 12a2 2 0 100-4 2 2 0 000 4z"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zm-2 6a3 3 0 116 0 3 3 0 01-6 0z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
                                     Bieden
                                 </button>
                                 <button
-                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-green-500 hover:bg-green-600"
+                                    class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
                                 >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
                                     Stuur Bericht
                                 </button>
                             {:else if product.type === "Ruilen"}
                                 <button
-                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-blue-500 hover:bg-blue-600"
+                                    class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-blue-500 hover:bg-blue-600 shadow-md"
                                 >
-                                    Ruil Voorstel
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M8 5a1 1 0 100 2h5.586l-1.293 1.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L13.586 5H8zM12 15a1 1 0 100-2H6.414l1.293-1.293a1 1 0 10-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L6.414 15H12z"
+                                        />
+                                    </svg>
+                                    Ruil voorstel
                                 </button>
                                 <button
-                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-green-500 hover:bg-green-600"
+                                    class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
                                 >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
                                     Stuur Bericht
                                 </button>
                             {:else if product.type === "Lenen"}
                                 <button
-                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-green-500 hover:bg-green-600"
+                                    class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
                                 >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
                                     Stuur Bericht
                                 </button>
                             {:else}
                                 <button
-                                    class="text-white font-semibold w-full py-2 transition-all duration-300 hover:scale-105 active:scale-95 rounded-md bg-gray-500 hover:bg-gray-600"
+                                    class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
                                 >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-5 w-5"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
                                     Stuur Bericht
                                 </button>
                             {/if}
