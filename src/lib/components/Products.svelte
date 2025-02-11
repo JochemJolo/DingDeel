@@ -319,7 +319,8 @@
                             {:else}
                                 <button
                                     class="flex items-center justify-center gap-2 text-white font-semibold w-full py-3 px-4 transition-all duration-300 hover:scale-105 active:scale-95 rounded-full bg-green-500 hover:bg-green-600"
-                                >
+                                    on:click={openChat}
+                                    >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         class="h-5 w-5"
